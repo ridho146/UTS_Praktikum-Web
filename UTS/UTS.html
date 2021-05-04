@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Moderno - Creative Simple Portfolio Page | Home :: w3layouts</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<!-- web-font -->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<!-- web-font -->
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- js -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!-- start-smoth-scrolling -->
+	</head>
+	<body>
+		<!-- header -->
+		<div id="home" class="header-bg">
+			<div class="header-layer">
+				<div class="header-top">
+					<!-- container -->
+					<div class="container">
+						<div class="head-logo">
+							<a href="#"><img src="images/logo.png" alt="" /></a>
+						</div>
+						<div class="top-nav">
+							<div class="nav-icon">
+								<a href="#" class="right_bt" id="activator"><span> </span> </a>
+							</div>
+							 <div class="box" id="box" style="top: -1000px;">
+								 <div class="box_content">        					                         
+									<div class="box_content_center">
+										<div class="form_content">
+											<div class="menu_box_list">
+												<ul>
+													<li><a href="#home" class="scroll"><span>home</span></a></li>
+													<li><a href="#services" class="scroll"><span>services</span></a></li>
+													<li><a href="#stories" class="scroll"><span>stories</span></a></li>
+													<li><a href="#gallery" class="scroll"><span>gallery</span></a></li>
+													<li><a href="#contact" class="scroll"><span>contact</span></a></li>
+												</ul>
+											</div>
+											<a class="boxclose" id="boxclose"> <span> </span></a>
+										</div>                                  
+									</div> 	
+								</div>  	  
+							</div>
+							<!-- start-click-drop-down-menu -->
+							<!-- start-dropdown -->
+							 <script type="text/javascript">
+								var $ = jQuery.noConflict();
+									$(function() {
+										$('#activator').click(function(){
+											$('#box').animate({'top':'0px'},900);
+										});
+										$('#boxclose').click(function(){
+										$('#box').animate({'top':'-1000px'},900);
+										});
+									});
+									$(document).ready(function(){
+									//Hide (Collapse) the toggle containers on load
+									$(".toggle_container").hide(); 
+									//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+									$(".trigger").click(function(){
+										$(this).toggleClass("active").next().slideToggle("500");
+											return false; //Prevent the browser jump to the link anchor
+									});
+														
+								});
+							</script>
+							<!-- //End-click-drop-down-menu -->
+							<!-- top-nav -->
+						</div>
+						<div class="clearfix"> </div>
+						<div class="head-info">
+							<h1>MODERNO</h1>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Curabitur eu velit nulla.
+							</p>
+							<div class="botton">
+								<a href="#">Get in Touch</a>
+							</div>
+						</div>
+					</div>
+					<!-- //container -->
+				</div>
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- service -->
+	</body>
+</html>
